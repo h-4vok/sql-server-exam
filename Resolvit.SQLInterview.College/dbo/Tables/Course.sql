@@ -1,0 +1,8 @@
+﻿CREATE TABLE Course (
+	IdCourse INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+	Comission NVARCHAR(1) NOT NULL,
+	CareerYear INT NOT NULL,
+	IdClass INT NOT NULL,
+
+	FOREIGN KEY (IdClass) REFERENCES Class
+)
